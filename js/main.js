@@ -131,12 +131,6 @@
     });
   }
 
-  /* desktop folder selection mimics Finder: hovering moves the highlight */
-  const dfolders = $$(".dfolder");
-  dfolders.forEach((f) =>
-    f.addEventListener("mouseenter", () => dfolders.forEach((x) => x.classList.toggle("is-selected", x === f)))
-  );
-
   /* ---------- copy to clipboard ---------- */
   const toast = $("#toast");
   let toastTimer;
