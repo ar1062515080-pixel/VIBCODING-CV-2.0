@@ -13,8 +13,8 @@ python3 -m http.server 8080
 
 1. **封面 Hero** — folder collage with mouse parallax
 2. **教育背景 Education** — profile ID folder (contact, languages, PDF résumé download) and two lined-paper cards with GPA post-it and course stickers
-3. **工作经历 Work** — Kingway, FleishmanHillard, Kada as click-to-open folders
-4. **代表项目 Projects** — Chi Bodycare, Adelaide Park Lands, Guerlain as click-to-open folders
+3. **工作经历 Work** — Kingway, FleishmanHillard, Kada as click-to-open folders; bullets match the résumé word for word, with the résumé highlights marked
+4. **代表项目 Projects** — Chi Bodycare, Adelaide Park Lands, Guerlain Winners Party; each folder has a tabbed project book (booking-flow demo, Instagram carousel, photo gallery with lightbox) and links to the full PDFs in `assets/projects/`
 5. **传播能力与工具 Skills** — divider drawer: content, collaboration, tools & language, AI workflow (with typed prompts)
 6. **联系方式 Contact** — open-folder spread with one-click copy for phone, email and WeChat
 
