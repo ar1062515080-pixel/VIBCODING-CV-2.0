@@ -1060,8 +1060,8 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 /* ============ ABOUT ============ */
 .about__grid { display: grid; grid-template-columns: 360px 1fr; gap: clamp(28px, 4vw, 56px); align-items: start; }
 .idcard--mbti { position: relative; top: 0; }
-.idcard--mbti .polaroid__img { background: #cfe0f5; }
-.idcard--mbti .idcard__role { font-family: var(--serif-cn); font-size: 1rem; font-weight: 700; color: var(--red); letter-spacing: 0.1em; }
+.idcard--mbti .polaroid__img img { object-fit: contain; padding: 8px; }
+.idcard--mbti .idcard__role { font-family: var(--serif-cn); font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; }
 .mbti__text { font-size: 0.86rem; line-height: 1.7; color: #4d3a12; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px dashed rgba(122,91,29,.35); }
 .traits { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; }
 .trait {
