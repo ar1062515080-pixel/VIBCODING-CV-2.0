@@ -2,6 +2,13 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const t = (zh) => window.I18N?.t(zh) ?? zh;
+
+  /* ---------- language ---------- */
+  let savedLang = "zh";
+  try { savedLang = localStorage.getItem("lang") === "en" ? "en" : "zh"; } catch {}
+  window.I18N?.apply(savedLang);
+  $("#langBtn")?.addEventListener("click", () => window.I18N.apply(window.I18N.lang === "en" ? "zh" : "en"));
 
   /* ---------- nav ---------- */
   const nav = $("#nav");
@@ -64,11 +71,15 @@
     if (reduceMotion) { el.textContent = text; return; }
     let i = 0;
     const tick = () => {
+      if (el.dataset.type !== text) return;
       el.textContent = text.slice(0, ++i);
       if (i < text.length) setTimeout(tick, 28 + Math.random() * 40);
     };
     tick();
   };
+  document.addEventListener("langchange", () => {
+    $$(".prompt__line").forEach((el) => typed.has(el) && (el.textContent = el.dataset.type));
+  });
   const openDivider = (d) => {
     dividers.forEach((x) => {
       const open = x === d;
@@ -179,8 +190,9 @@
         s.classList.toggle("is-done", k < cur);
       });
       panels.forEach((p, k) => p.classList.toggle("is-on", k === cur));
-      next.textContent = cur === steps.length - 1 ? "重新开始 ↺" : "下一步 →";
+      next.textContent = t(cur === steps.length - 1 ? "重新开始 ↺" : "下一步 →");
     };
+    document.addEventListener("langchange", () => go(cur));
     steps.forEach((s) => s.addEventListener("click", () => go(Number(s.dataset.step))));
     next.addEventListener("click", () => go(cur + 1));
   });
@@ -223,7 +235,7 @@
   $$("[data-copy]").forEach((btn) =>
     btn.addEventListener("click", async () => {
       await copyText(btn.dataset.copy);
-      showToast(`已复制：${btn.dataset.copy}`);
+      showToast(`${t("已复制：")}${btn.dataset.copy}`);
     })
   );
 })();
