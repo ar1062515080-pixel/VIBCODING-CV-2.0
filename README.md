@@ -42,3 +42,4 @@ python3 -m http.server 8080
 | `assets/resume-yanrui-li.pdf` · `assets/resume-yanrui-li-en.pdf` | Résumé, chosen by current language |
 | `assets/hero/` · `assets/about/` | Hero tiles, phone grid, ENTJ image and hobby photos |
 | `assets/samples/` · `assets/projects/` | Writing samples and project PDFs |
+
