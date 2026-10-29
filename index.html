@@ -29,6 +29,18 @@
     <symbol id="star" viewBox="0 0 100 100">
       <path d="M50 4 L61 37 L96 38 L68 59 L78 94 L50 73 L22 94 L32 59 L4 38 L39 37 Z" />
     </symbol>
+    <symbol id="sparkle" viewBox="0 0 100 100">
+      <path d="M50 0 C53 35 65 47 100 50 C65 53 53 65 50 100 C47 65 35 53 0 50 C35 47 47 35 50 0 Z" />
+    </symbol>
+    <symbol id="macfolder" viewBox="0 0 120 92">
+      <path d="M6 14 a7 7 0 0 1 7 -7 h30 a6 6 0 0 1 4.5 2 l6 6.5 h53.5 a7 7 0 0 1 7 7 v56 a7 7 0 0 1 -7 7 H13 a7 7 0 0 1 -7 -7z" fill="var(--f-back)" />
+      <rect x="6" y="25" width="108" height="61" rx="7" fill="var(--f-front)" />
+      <rect x="6" y="25" width="108" height="3" rx="1.5" fill="#fff" opacity=".35" />
+      <rect x="6" y="80" width="108" height="6" rx="3" fill="#000" opacity=".06" />
+    </symbol>
+    <symbol id="cursor" viewBox="0 0 24 24">
+      <path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.5 L12 14 L19 14 Z" fill="#111" stroke="#fff" stroke-width="1.4" stroke-linejoin="round" />
+    </symbol>
   </svg>
 
   <!-- ============ NAV ============ -->
@@ -43,7 +55,7 @@
       <a href="#ai" data-nav="ai">AI Lab</a>
       <a href="#contact" data-nav="contact">联系</a>
     </nav>
-    <a href="#contact" class="nav__cta">聊聊合作 <span aria-hidden="true">↗</span></a>
+    <a href="#contact" class="nav__cta"><i class="dot"></i>Open to work</a>
     <button class="nav__burger" id="burger" aria-label="打开菜单"><span></span><span></span></button>
   </header>
 
@@ -51,75 +63,79 @@
 
     <!-- ============ 01 HERO ============ -->
     <section class="hero" id="hero" data-section>
-      <div class="hero__head">
-        <p class="hero__kicker">A personal collection of ideas</p>
-        <h1 class="hero__title">YANRUI'S <em>PORTFOLIO</em></h1>
+      <div class="hero__masthead">
+        <span>VOL.01 — ISSUE 2026</span>
+        <span class="hide-sm">STRATEGIC COMMUNICATION · CONTENT · AI</span>
+        <span>ADELAIDE ⇄ SHANGHAI</span>
       </div>
 
       <div class="hero__stage" id="heroStage">
-        <div class="hfolder" data-depth="0.4">
-          <div class="hfolder__paper"></div>
-          <div class="hfolder__body">
-            <span class="hfolder__tab">A few good stories</span>
-            <span class="hclip" aria-hidden="true"><svg><use href="#clip" /></svg></span>
-            <p class="mono hfolder__label">Yanrui's creative archive</p>
-            <p class="hfolder__slogan">GOOD STORIES,<br /><em>REAL IMPACT.</em></p>
-            <p class="hfolder__note">From a communicator's point of view.</p>
-            <a href="#showcase" class="hfolder__open">点击翻开档案 ↗</a>
+        <!-- main cover folder -->
+        <div class="cover" data-depth="0.6">
+          <div class="cover__paper cover__paper--grid">
+            <span>BRIEF · TYP NORMAL</span><span>KPI 54 · REACH 61</span><span>HOT#1 · 2026</span>
+          </div>
+          <div class="cover__paper cover__paper--plain">
+            <span>MEDIA LIST — 30+/DAY</span><span>KOL BRIEF ×8</span>
+          </div>
+          <div class="cover__folder">
+            <div class="cover__tab">PORTFOLIO_2026</div>
+            <div class="cover__note">
+              <svg class="clip clip--cover"><use href="#clip" /></svg>
+              <p class="mono">STATUS</p>
+              <p class="cover__note-big">OPEN<br />TO WORK</p>
+              <p class="mono">全职 · 实习 · 项目合作</p>
+            </div>
+            <div class="cover__title">
+              <h1>
+                <span class="cover__script">Yanrui's</span>
+                <span class="cover__serif">PORTFOLIO</span>
+              </h1>
+              <p class="cover__sub">李沿睿 · 战略传播 / 整合营销 / 内容策划 / AI 增效</p>
+            </div>
+            <p class="cover__handle mono">@YANRUI.LI_</p>
           </div>
         </div>
 
-        <figure class="hpolaroid" data-depth="1.2">
-          <span class="tape tape--top"></span>
-          <div class="polaroid__img">
-            <img src="assets/avatar.jpg" alt="李沿睿" onerror="this.remove()" />
-            <span class="polaroid__fallback">YR</span>
-          </div>
-          <figcaption>A little sunshine, a lot of ideas.</figcaption>
-        </figure>
+        <!-- floating desktop folders -->
+        <a href="#showcase" class="dfolder dfolder--blue" style="--x:6%;--y:16%" data-depth="1.6">
+          <svg><use href="#macfolder" /></svg><span>showcase_05.folder</span>
+        </a>
+        <a href="#resume" class="dfolder dfolder--yellow" style="--x:2%;--y:62%" data-depth="1.1">
+          <svg><use href="#macfolder" /></svg><span>resume_2026.pdf</span>
+        </a>
+        <a href="#ai" class="dfolder dfolder--green" style="--x:86%;--y:14%" data-depth="1.4">
+          <svg><use href="#macfolder" /></svg><span>ai_lab.app</span>
+        </a>
+        <a href="#contact" class="dfolder dfolder--pink is-selected" style="--x:84%;--y:58%" data-depth="1.9">
+          <svg><use href="#macfolder" /></svg><span>say_hi.vcf</span>
+          <svg class="dfolder__cursor"><use href="#cursor" /></svg>
+        </a>
 
-        <div class="hphone" data-depth="1.6" aria-hidden="true">
-          <span class="hphone__notch"></span>
-          <p class="hphone__name">yanrui.li</p>
-          <div class="hphone__row">
-            <span class="hphone__avatar"></span>
-            <div class="hphone__stats"><span><b>5</b>案例</span><span><b>3</b>经历</span><span><b>AI</b>能力</span></div>
-          </div>
-          <p class="hphone__bio"></p><p class="hphone__bio short"></p>
-          <div class="hphone__grid">
-            <i style="--g:#f6c9d4"></i><i style="--g:#cfe0f5"></i><i style="--g:#fbe7a8"></i>
-            <i style="--g:#d9ecc9"></i><i style="--g:#c8102e"></i><i style="--g:#f3e7da"></i>
-            <i style="--g:#3f74b5"></i><i style="--g:#f37ea0"></i><i style="--g:#e9e3f5"></i>
-          </div>
+        <!-- stickers -->
+        <div class="sticker sticker--badge" style="--x:72%;--y:78%" data-depth="2.2">
+          <span>MA · Strategic<br />Communication</span><small>Adelaide Uni</small>
         </div>
-
-        <div class="hgrid" data-depth="1" aria-hidden="true">
-          <i style="--g:linear-gradient(160deg,#f6c9d4,#fff)">PR</i>
-          <i style="--g:linear-gradient(160deg,#cfe0f5,#fff)">IMC</i>
-          <i style="--g:linear-gradient(160deg,#d9ecc9,#fff)">KOL</i>
-          <i style="--g:linear-gradient(160deg,#fbe7a8,#fff)">SEO</i>
-          <i style="--g:linear-gradient(160deg,#e9e3f5,#fff)">小红书</i>
-          <i style="--g:linear-gradient(160deg,#ffd1dc,#cfe3ff)">AI</i>
-          <span class="tape"></span>
+        <div class="sticker sticker--label" style="--x:12%;--y:84%" data-depth="2">
+          <svg class="s-star s-star--y"><use href="#star" /></svg>
+          <span>best of<br />2025–26</span>
+          <svg class="s-star s-star--o"><use href="#star" /></svg>
         </div>
+        <svg class="float-spark" style="--x:30%;--y:10%" data-depth="2.6"><use href="#sparkle" /></svg>
+        <svg class="float-spark float-spark--sm" style="--x:70%;--y:6%" data-depth="3"><use href="#sparkle" /></svg>
+      </div>
 
-        <svg class="cherries" viewBox="0 0 100 120" data-depth="1.8" aria-hidden="true">
-          <defs>
-            <radialGradient id="cherry" cx="0.35" cy="0.35" r="0.7">
-              <stop offset="0" stop-color="#e2434f" /><stop offset="0.6" stop-color="#a5121f" /><stop offset="1" stop-color="#6d0711" />
-            </radialGradient>
-          </defs>
-          <path d="M52 8 C46 40 32 62 26 90 M52 8 C58 40 70 60 74 86" fill="none" stroke="#5a3a1a" stroke-width="2.4" stroke-linecap="round" />
-          <path d="M52 8 C62 0 78 2 84 10 C74 16 60 16 52 8 Z" fill="#6f9a3e" />
-          <circle cx="26" cy="98" r="17" fill="url(#cherry)" />
-          <circle cx="74" cy="94" r="17" fill="url(#cherry)" />
-          <ellipse cx="20" cy="92" rx="4" ry="2.6" fill="#fff" opacity=".7" transform="rotate(-30 20 92)" />
-          <ellipse cx="68" cy="88" rx="4" ry="2.6" fill="#fff" opacity=".7" transform="rotate(-30 68 88)" />
-        </svg>
+      <div class="hero__foot">
+        <p class="hero__intro">Hi, 我是 <b>Yanrui</b>。<br class="hide-sm" />在公关、整合营销与内容之间，用故事和 AI 让品牌被看见。</p>
+        <a href="#showcase" class="scroll-hint"><span>SCROLL</span><i></i></a>
+        <div class="barcode" aria-hidden="true"></div>
+      </div>
 
-        <p class="hero__hand" data-depth="0.8">Collected with curiosity.
-          <svg viewBox="0 0 100 34"><path d="M2 26 C30 36 64 32 94 10 M84 10 L95 9 L92 20" /></svg>
-        </p>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>公关传播 PR</span><span>✦</span><span>整合营销 IMC</span><span>✦</span><span>内容策划 Content</span><span>✦</span><span>KOL & Media</span><span>✦</span><span>SEO / SEM</span><span>✦</span><span>AI Workflow</span><span>✦</span>
+          <span>公关传播 PR</span><span>✦</span><span>整合营销 IMC</span><span>✦</span><span>内容策划 Content</span><span>✦</span><span>KOL & Media</span><span>✦</span><span>SEO / SEM</span><span>✦</span><span>AI Workflow</span><span>✦</span>
+        </div>
       </div>
     </section>
 
@@ -396,6 +412,7 @@
             <h3 class="idcard__name">李沿睿 <small>YANRUI LI</small></h3>
             <p class="idcard__role">Strategic Communication · Content · AI</p>
             <dl class="idcard__facts">
+              <div><dt class="mono">BASE</dt><dd>阿德莱德 / 上海</dd></div>
               <div><dt class="mono">LANG</dt><dd>中文 · English (IELTS 6.5)</dd></div>
               <div><dt class="mono">TOOLS</dt><dd>Canva · PS · CapCut · Office · GA</dd></div>
             </dl>
@@ -597,8 +614,8 @@
           <p class="spread__text">如果你在寻找一位懂传播策略、能落地执行、又擅长用 AI 提效的伙伴——无论是全职岗位、实习机会还是项目合作，都欢迎来聊聊。好的故事，值得被更多人看见。</p>
           <div class="ticket">
             <div class="ticket__top"><span class="mono">AVAILABILITY</span><b>2026</b></div>
-            <div class="ticket__row mono"><span>ROLE</span><span>FORMAT</span><span>CITY</span></div>
-            <div class="ticket__row"><span>PR / 营销 / 内容</span><span>全职 · 实习 · 项目</span><span>不限</span></div>
+            <div class="ticket__row mono"><span>ROLE</span><span>FORMAT</span><span>BASE</span></div>
+            <div class="ticket__row"><span>PR / 营销 / 内容</span><span>全职 · 实习 · 项目</span><span>AU · CN</span></div>
           </div>
           <svg class="s-star s-star--contact"><use href="#star" /></svg>
         </div>
