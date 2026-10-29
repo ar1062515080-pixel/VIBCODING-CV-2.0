@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Pinyon+Script&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=9" />
+  <link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 <body>
 
@@ -42,6 +42,7 @@
       <a href="#work" data-nav="work">经历</a>
       <a href="#projects" data-nav="projects">项目</a>
       <a href="#skills" data-nav="skills">能力</a>
+      <a href="#about" data-nav="about">关于</a>
       <a href="#contact" data-nav="contact">联系</a>
     </nav>
     <div class="nav__end">
@@ -810,10 +811,104 @@
       </div>
     </section>
 
-    <!-- ============ 05 CONTACT ============ -->
+    <!-- ============ 06 ABOUT ============ -->
+    <section class="section about" id="about" data-section>
+      <header class="sec-head reveal">
+        <p class="sec-head__idx mono">06 / ABOUT ME</p>
+        <h2 class="sec-head__title">关于我<span class="script">off duty</span></h2>
+        <p class="sec-head__desc">工作之外的我：爱动、爱学，也爱和人打交道。</p>
+      </header>
+
+      <div class="about__grid">
+        <aside class="idcard idcard--mbti reveal">
+          <div class="idcard__tab">PERSONALITY.ID</div>
+          <div class="idcard__body">
+            <div class="polaroid">
+              <span class="tape tape--top"></span>
+              <div class="polaroid__img"><img src="assets/about/entj.svg" alt="ENTJ 指挥官型插画" /></div>
+              <p class="polaroid__cap">the commander</p>
+            </div>
+            <h3 class="idcard__name">ENTJ <small>MBTI</small></h3>
+            <p class="idcard__role">指挥官型</p>
+            <p class="mbti__text">目标感强，喜欢把想法推进成结果。热情外向，乐于和不同的人交流；遇到压力时更冷静，习惯把难题拆开逐个解决。</p>
+            <div class="traits">
+              <div class="trait postit--yellow"><b>热情洋溢</b><span>和人交流是我的充电方式</span></div>
+              <div class="trait postit--pink"><b>乐观</b><span>相信问题总有解法</span></div>
+              <div class="trait postit--blue"><b>抗压能力强</b><span>节点越紧，越能稳住节奏</span></div>
+              <div class="trait postit--green"><b>好奇心</b><span>喜欢接触一切新鲜事物</span></div>
+            </div>
+            <svg class="s-star s-star--idcard"><use href="#star" /></svg>
+          </div>
+        </aside>
+
+        <div class="hobbies reveal">
+          <p class="hobbies__label mono">HOBBIES · 5</p>
+          <div class="hobbies__board">
+            <figure class="hobby" style="--c:#ffd1dc" data-hobby="fit">
+              <span class="tape tape--top"></span>
+              <div class="hobby__img">
+                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></svg><span>照片待添加</span></span>
+              </div>
+              <figcaption>
+                <span class="hobby__script">stay strong</span>
+                <b class="hobby__name">健身</b>
+                <span class="hobby__line">规律训练，保持能量</span>
+              </figcaption>
+            </figure>
+            <figure class="hobby" style="--c:#dff0c8" data-hobby="hike">
+              <span class="tape tape--tl"></span>
+              <div class="hobby__img">
+                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M3 20l6-10 4 6 3-4 5 8z"/><path d="M15 4v5M15 4l4 1.5L15 7"/></svg><span>照片待添加</span></span>
+              </div>
+              <figcaption>
+                <span class="hobby__script">on the trail</span>
+                <b class="hobby__name">徒步</b>
+                <span class="hobby__line">用脚步认识一座城市</span>
+              </figcaption>
+            </figure>
+            <figure class="hobby" style="--c:#cfe3ff" data-hobby="paint">
+              <span class="tape tape--top"></span>
+              <div class="hobby__img">
+                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.7 0-1.3-1.2-1.6-1.2-2.8 0-1 .8-1.6 1.8-1.6H17a4 4 0 0 0 4-4C21 6.4 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/></svg><span>照片待添加</span></span>
+              </div>
+              <figcaption>
+                <span class="hobby__script">sketchbook</span>
+                <b class="hobby__name">画画</b>
+                <span class="hobby__line">换一种方式表达</span>
+              </figcaption>
+            </figure>
+            <figure class="hobby" style="--c:#ffe680" data-hobby="read">
+              <span class="tape tape--tl"></span>
+              <div class="hobby__img">
+                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M3 5.5c3-1.3 6-1.3 9 .5v13c-3-1.8-6-1.8-9-.5zM21 5.5c-3-1.3-6-1.3-9 .5v13c3-1.8 6-1.8 9-.5z"/></svg><span>照片待添加</span></span>
+              </div>
+              <figcaption>
+                <span class="hobby__script">page by page</span>
+                <b class="hobby__name">阅读</b>
+                <span class="hobby__line">每天给自己一点输入</span>
+              </figcaption>
+            </figure>
+            <figure class="hobby" style="--c:#f1dcae" data-hobby="ai">
+              <span class="tape tape--top"></span>
+              <div class="hobby__img">
+                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span>照片待添加</span></span>
+              </div>
+              <figcaption>
+                <span class="hobby__script">what's next</span>
+                <b class="hobby__name">追 AI 趋势</b>
+                <span class="hobby__line">新工具出来第一时间上手</span>
+              </figcaption>
+            </figure>
+          </div>
+          <p class="hobbies__hand">Collected with curiosity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 CONTACT ============ -->
     <section class="section contact" id="contact" data-section>
       <header class="sec-head reveal">
-        <p class="sec-head__idx mono">06 / CONTACT</p>
+        <p class="sec-head__idx mono">07 / CONTACT</p>
         <h2 class="sec-head__title">联系方式<span class="script">say hello</span></h2>
       </header>
 
@@ -874,8 +969,8 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/i18n-en.js?v=9"></script>
-  <script src="js/i18n.js?v=9"></script>
-  <script src="js/main.js?v=9"></script>
+  <script src="js/i18n-en.js?v=10"></script>
+  <script src="js/i18n.js?v=10"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

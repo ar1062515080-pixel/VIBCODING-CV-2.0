@@ -155,6 +155,7 @@ svg { display: block; }
   transition: transform 0.25s var(--ease);
 }
 .nav__cv:hover { transform: translateY(-1px); }
+.nav__cta, .nav__cv { white-space: nowrap; }
 .nav__lang {
   display: inline-flex; padding: 3px;
   border-radius: 999px;
@@ -1056,6 +1057,69 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 }
 .educard__courses li:hover { background: var(--c); color: #fff; transform: translateY(-2px) rotate(-1.5deg); }
 
+/* ============ ABOUT ============ */
+.about__grid { display: grid; grid-template-columns: 360px 1fr; gap: clamp(28px, 4vw, 56px); align-items: start; }
+.idcard--mbti { position: relative; top: 0; }
+.idcard--mbti .polaroid__img { background: #cfe0f5; }
+.idcard--mbti .idcard__role { font-family: var(--serif-cn); font-size: 1rem; font-weight: 700; color: var(--red); letter-spacing: 0.1em; }
+.mbti__text { font-size: 0.86rem; line-height: 1.7; color: #4d3a12; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px dashed rgba(122,91,29,.35); }
+.traits { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; }
+.trait {
+  display: grid; gap: 4px;
+  padding: 12px 12px 14px;
+  font-size: 0.74rem; line-height: 1.45;
+  color: var(--ink-2);
+  box-shadow: 0 12px 18px -12px rgba(0, 0, 0, 0.45);
+  rotate: -2deg;
+  transition: rotate 0.4s var(--ease), transform 0.4s var(--ease);
+}
+.trait:nth-child(even) { rotate: 2.5deg; }
+.trait:nth-child(3) { rotate: 1.5deg; }
+.trait:hover { rotate: 0deg; transform: translateY(-3px); }
+.trait b { font-family: var(--serif-cn); font-size: 1rem; font-weight: 900; color: var(--ink); }
+
+.hobbies { position: relative; min-width: 0; padding-top: 30px; }
+.hobbies__label { color: var(--ink-3); font-size: 0.62rem; margin-bottom: 30px; }
+.hobbies__board { display: flex; flex-wrap: wrap; justify-content: center; gap: 46px 30px; }
+.hobby {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+  max-width: 250px;
+  margin: 0;
+  padding: 12px 12px 0;
+  background: #fff;
+  box-shadow: var(--shadow-paper);
+  rotate: -3deg;
+  transition: rotate 0.5s var(--ease), transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.hobby:nth-child(2) { rotate: 2.5deg; translate: 0 18px; }
+.hobby:nth-child(3) { rotate: -1.5deg; }
+.hobby:nth-child(4) { rotate: 3deg; }
+.hobby:nth-child(5) { rotate: -2deg; translate: 0 14px; }
+.hobby:hover { rotate: 0deg; transform: translateY(-6px); box-shadow: var(--shadow-lift); z-index: 2; }
+.hobby__img {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255,255,255,.6), transparent 45%),
+    linear-gradient(150deg, var(--c), #fff 140%);
+}
+.hobby__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.hobby__ph {
+  position: absolute; inset: 12px;
+  display: grid; place-content: center; justify-items: center; gap: 10px;
+  border: 1.5px dashed rgba(17, 17, 19, 0.22);
+  border-radius: 4px;
+  font-size: 0.72rem; color: var(--ink-3);
+}
+.hobby__ph svg { width: 38px; height: 38px; fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.75; }
+.hobby figcaption { display: grid; justify-items: center; gap: 2px; padding: 8px 4px 16px; text-align: center; }
+.hobby__script { font-family: var(--script); font-size: 1.4rem; line-height: 1.1; color: var(--ink-2); }
+.hobby__name { font-family: var(--serif-cn); font-size: 1.08rem; font-weight: 900; }
+.hobby__line { font-size: 0.76rem; color: var(--ink-2); }
+.hobbies__hand { margin-top: 44px; text-align: right; font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--ink-2); rotate: -4deg; }
+
 /* ============ AI — drawer ============ */
 .ai::before {
   content: "";
@@ -1267,10 +1331,18 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 .toast.is-show { opacity: 1; translate: -50% 0; }
 
 /* ============ RESPONSIVE ============ */
+@media (max-width: 1180px) {
+  .nav__links a { padding: 8px 11px; }
+}
+@media (max-width: 1060px) {
+  .nav__cta { display: none; }
+}
 @media (max-width: 1080px) {
   .resume__grid { grid-template-columns: 1fr; }
   .edu-list { padding-top: 10px; }
   .idcard { position: relative; top: 0; max-width: 520px; }
+  .about__grid { grid-template-columns: 1fr; }
+  .hobbies { padding-top: 10px; }
 }
 
 @media (max-width: 900px) {
@@ -1339,6 +1411,12 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 }
 
 @media (max-width: 600px) {
+  .hobbies__board { gap: 34px 18px; }
+  .hobby { width: calc((100% - 18px) / 2); padding: 8px 8px 0; }
+  .hobby:nth-child(2), .hobby:nth-child(5) { translate: 0 10px; }
+  .hobby__script { font-size: 1.15rem; }
+  .hobby__line { font-size: 0.7rem; }
+  .idcard--mbti .s-star--idcard { right: -4px; }
   .hide-sm { display: none; }
   .hero { padding-top: 96px; }
   .hero__stage { place-items: start center; min-height: 600px; padding-top: 70px; }
