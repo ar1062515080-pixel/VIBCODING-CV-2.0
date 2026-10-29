@@ -451,7 +451,7 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 .case__tab::after { right: -14px; --cx: 14px; }
 .case__no { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1; font-style: italic; }
 .case__name { font-family: var(--serif-cn); font-weight: 700; font-size: clamp(1.05rem, 2.2vw, 1.6rem); letter-spacing: -0.01em; }
-.case__meta { opacity: 0.9; font-size: 0.82rem; font-weight: 500; }
+.case__meta { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.02em; text-align: right; }
 .case__toggle {
   position: relative;
   width: 46px; height: 46px;
@@ -1410,7 +1410,7 @@ button.hobby__img { display: block; width: 100%; padding: 0; border: 0; cursor: 
 
 
   .case__head { grid-template-columns: auto 1fr auto; gap: 14px; }
-  .case__meta { grid-column: 2; grid-row: 2; margin-top: -10px; }
+  .case__meta { grid-column: 2; grid-row: 2; margin-top: -10px; font-size: 0.9rem; text-align: left; }
   .case__toggle { grid-column: 3; grid-row: 1 / span 2; }
   .case__tab { left: min(var(--tab), calc(100% - 210px)); font-size: 0.6rem; padding: 0 16px; }
   .case__inner { grid-template-columns: 1fr; }
