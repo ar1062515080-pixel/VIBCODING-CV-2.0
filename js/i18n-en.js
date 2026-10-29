@@ -1,6 +1,6 @@
 window.I18N_EN = {
 "__title": "Yanrui Li · Strategic Communication Portfolio",
-"__desc": "Yanrui Li — strategic communication, integrated marketing, content planning and AI-assisted workflows. Master of Communication, University of Adelaide.",
+"__desc": "Yanrui Li — strategic communication, integrated marketing, content planning and AI-assisted workflows. Master of Communication, Adelaide University.",
 "封面": "Cover",
 "教育": "Education",
 "经历": "Work",
@@ -19,11 +19,11 @@ window.I18N_EN = {
 "中文 · English (IELTS 6.5)": "Chinese · English (IELTS 6.5)",
 "下载 PDF 简历 <span aria-hidden=\"true\">↓</span>": "Download PDF résumé <span aria-hidden=\"true\">↓</span>",
 "2025.03 — 2027.03（预计）· 澳大利亚": "2025.03 — 2027.03 (expected) · Australia",
-"阿德莱德大学 <small>Adelaide University</small>": "Adelaide University <small>University of Adelaide</small>",
+"阿德莱德大学 <small>Adelaide University</small>": "Adelaide University",
 "传播学硕士 · 战略传播": "Master of Communication · Strategic Communication",
 "相关课程": "Relevant courses",
 "2018.09 — 2022.07 · 成都": "2018.09 — 2022.07 · Chengdu",
-"成都信息工程大学 <small>Chengdu University of Information Technology</small>": "Chengdu University of Information Technology <small>成都信息工程大学</small>",
+"成都信息工程大学 <small>Chengdu University of Information Technology</small>": "Chengdu University of Information Technology",
 "管理学学士 · 电子商务": "Bachelor of Management · E-commerce",
 "创新思维与创新方法": "Innovative Thinking and Methods",
 "企业战略管理": "Corporate Strategic Management",
@@ -332,4 +332,5 @@ window.I18N_EN = {
 "关闭": "Close",
 "重新开始 ↺": "Start over ↺",
 "已复制：": "Copied: "
+,"下载简历": "Résumé"
 };

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Pinyon+Script&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
 </head>
 <body>
 
@@ -46,6 +46,7 @@
     </nav>
     <div class="nav__end">
       <button class="nav__lang" id="langBtn" type="button" aria-label="切换语言 / Switch language"><span data-l="zh">中</span><span data-l="en">EN</span></button>
+      <a href="assets/resume-yanrui-li.pdf" class="nav__cv" data-resume download aria-label="下载简历 / Download résumé"><span class="nav__cv-label">下载简历</span><span aria-hidden="true">↓</span></a>
       <a href="#contact" class="nav__cta">联系我 <span aria-hidden="true">↗</span></a>
       <button class="nav__burger" id="burger" aria-label="打开菜单"><span></span><span></span></button>
     </div>
@@ -154,7 +155,7 @@
               <div><dt class="mono">EMAIL</dt><dd>ar1062515080@gmail.com</dd></div>
               <div><dt class="mono">LANG</dt><dd>中文 · English (IELTS 6.5)</dd></div>
             </dl>
-            <a class="idcard__dl" href="assets/resume-yanrui-li.pdf" download>下载 PDF 简历 <span aria-hidden="true">↓</span></a>
+            <a class="idcard__dl" href="assets/resume-yanrui-li.pdf" data-resume download>下载 PDF 简历 <span aria-hidden="true">↓</span></a>
             <svg class="s-star s-star--idcard"><use href="#star" /></svg>
           </div>
         </aside>
@@ -873,8 +874,8 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/i18n-en.js?v=5"></script>
-  <script src="js/i18n.js?v=5"></script>
-  <script src="js/main.js?v=5"></script>
+  <script src="js/i18n-en.js?v=6"></script>
+  <script src="js/i18n.js?v=6"></script>
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>

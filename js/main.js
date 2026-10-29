@@ -8,6 +8,15 @@
   let savedLang = "zh";
   try { savedLang = localStorage.getItem("lang") === "en" ? "en" : "zh"; } catch {}
   window.I18N?.apply(savedLang);
+  const syncResume = () => {
+    const en = window.I18N?.lang === "en";
+    $$("[data-resume]").forEach((a) => {
+      a.href = en ? "assets/resume-yanrui-li-en.pdf" : "assets/resume-yanrui-li.pdf";
+      a.download = en ? "Yanrui_Li_Resume_EN.pdf" : "李沿睿-简历.pdf";
+    });
+  };
+  syncResume();
+  document.addEventListener("langchange", syncResume);
   $("#langBtn")?.addEventListener("click", () => window.I18N.apply(window.I18N.lang === "en" ? "zh" : "en"));
 
   /* ---------- nav ---------- */

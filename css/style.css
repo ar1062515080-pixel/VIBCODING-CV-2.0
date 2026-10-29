@@ -146,6 +146,15 @@ svg { display: block; }
 }
 .nav__cta:hover { transform: translateY(-1px); }
 .nav__end { display: flex; align-items: center; gap: 8px; }
+.nav__cv {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 0.82rem; font-weight: 500;
+  color: #fff; background: var(--ink);
+  transition: transform 0.25s var(--ease);
+}
+.nav__cv:hover { transform: translateY(-1px); }
 .nav__lang {
   display: inline-flex; padding: 3px;
   border-radius: 999px;
@@ -1341,6 +1350,9 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
   .hero__hand { right: 3%; bottom: 0; font-size: 0.82rem; }
   .hero__hand svg { display: none; }
   .nav__cta { display: none; }
+  .nav__end { gap: 6px; }
+  .nav__cv { width: 38px; height: 38px; padding: 0; justify-content: center; font-size: 0.95rem; }
+  .nav__cv-label { display: none; }
 
   .case__no { font-size: 1.8rem; }
   .postit { margin-right: -8px; margin-bottom: -40px; }
