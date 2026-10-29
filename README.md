@@ -1,6 +1,6 @@
-# Yanrui Li · 李沿睿 — Interactive Résumé Site
+# Yanrui Li · 李沿睿 — Portfolio
 
-A bilingual (中文 / English), highly interactive personal site built from the résumé. Pure HTML / CSS / vanilla JS — no build step.
+Apple-style minimalism × magazine collage: white base, colored folders, polaroids, post-its, paper clips and stickers. Section order follows the résumé.
 
 ## Run locally
 
@@ -9,22 +9,22 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-## Structure
+## Sections
+
+1. **封面 Hero** — folder collage with mouse parallax
+2. **教育背景 Education** — profile ID folder (contact, languages, PDF résumé download) and two lined-paper cards with GPA post-it and course stickers
+3. **工作经历 Work** — Kingway, FleishmanHillard, Kada as click-to-open folders, followed by a numbers bento and a team-collaboration hub
+4. **代表项目 Projects** — Chi Bodycare, Adelaide Park Lands, Guerlain as click-to-open folders
+5. **传播能力与工具 Skills** — divider drawer: content, collaboration, tools & language, AI workflow (with typed prompts)
+6. **联系方式 Contact** — open-folder spread with one-click copy for phone, email and WeChat
+
+## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Page skeleton (hero, about, experience, projects, skills, contact) |
-| `js/data.js` | All content, bilingual `{ zh, en }` — edit this to update the site |
-| `js/main.js` | Rendering and interactions |
-| `css/style.css` | Design tokens, light/dark themes, layout, motion |
+| `index.html` | All content and markup |
+| `css/style.css` | Visual system, collage parts, responsive rules |
+| `js/main.js` | Nav, reveals, folders, drawer, counters, parallax, copy |
 | `assets/resume-yanrui-li.pdf` | Downloadable résumé |
 
-## Interactions
-
-- 中 / EN language toggle and light / dark theme (both remembered)
-- Hero: rotating focus words, mouse spotlight, 3D-tilt ID card with counting stats
-- Experience: filter by capability, expandable timeline cards
-- Projects: filterable cards, modal case studies with prev/next, arrow keys, deep links (`#project/<id>`)
-- Skill map: pick a skill to see the experiences and projects that prove it, then jump straight there
-- Contact: one-click copy, vCard download, résumé download, and a form that drafts an email
-- Scroll progress bar, active-section nav, reveal-on-scroll, reduced-motion support
+Drop a photo at `assets/avatar.jpg` to replace the "YR" placeholder.
