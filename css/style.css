@@ -480,7 +480,7 @@ svg { display: block; }
   position: relative;
   align-self: start;
   margin-top: 10px;
-  padding: 30px 30px 74px;
+  padding: 30px 30px 34px;
   background: #fff;
   color: var(--ink);
   border-radius: 4px;
@@ -493,14 +493,13 @@ svg { display: block; }
 .case__list { display: grid; gap: 8px; font-size: 0.9rem; color: var(--ink-2); }
 .case__list li { position: relative; padding-left: 20px; }
 .case__list li::before { content: "✦"; position: absolute; left: 0; top: 0; font-size: 0.7rem; color: var(--c2); }
-.case__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; padding-right: 150px; }
+.case__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; }
 .case__tags span { font-size: 0.74rem; padding: 4px 11px; border-radius: 999px; background: #f2f2f0; color: var(--ink-2); }
 
 .postit {
-  position: absolute;
-  right: -22px;
-  bottom: -72px;
+  position: relative;
   width: 168px;
+  margin: 18px -44px -70px auto;
   padding: 18px 16px 18px;
   rotate: -5deg;
   color: var(--ink);
@@ -1136,7 +1135,7 @@ svg { display: block; }
   .case__tab { left: min(var(--tab), calc(100% - 210px)); font-size: 0.6rem; padding: 0 16px; }
   .case__inner { grid-template-columns: 1fr; }
   .case__info { rotate: 0deg; margin-bottom: 30px; }
-  .postit { right: 10px; }
+  .postit { margin-right: -10px; }
 
   .drawer { flex-direction: column; height: auto; padding-left: 0; padding-top: 14px; }
   .divider { flex: none; flex-direction: column; margin-left: 0; margin-top: -14px; border-radius: 24px 24px 6px 6px; box-shadow: 0 -10px 26px -12px rgba(0,0,0,.3); background: repeating-linear-gradient(90deg, rgba(255,255,255,0.12) 0 1px, transparent 1px 3px), linear-gradient(180deg, var(--c2), var(--c) 30%); }
@@ -1169,8 +1168,7 @@ svg { display: block; }
   .nav__cta { display: none; }
 
   .case__no { font-size: 1.8rem; }
-  .case__tags { padding-right: 0; margin-bottom: 60px; }
-  .postit { right: 16px; bottom: -24px; }
+  .postit { margin-right: -8px; margin-bottom: -40px; }
   .educard { padding: 28px 20px 24px 28px; }
   .educard__school { padding-right: 0; }
   .educard__gpa { position: relative; right: auto; top: auto; margin-top: 14px; width: 104px; rotate: -3deg; }
