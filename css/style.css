@@ -940,6 +940,33 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 .dbtn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 999px; background: #fff; color: var(--ink); font-size: 0.84rem; font-weight: 600; box-shadow: var(--shadow-paper); transition: transform 0.25s var(--ease); }
 .dbtn:hover { transform: translateY(-2px); }
 .dbtn--ghost { background: transparent; color: var(--ink-c); box-shadow: inset 0 0 0 1.5px currentColor; }
+.samples { grid-column: 1 / -1; margin-top: 70px; }
+.samples__label { font-size: 0.62rem; opacity: 0.7; margin-bottom: 18px; }
+.samples__list { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.sample {
+  display: grid; grid-template-columns: 116px 1fr; gap: 22px; align-items: center;
+  padding: 20px 22px 20px 20px;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: var(--shadow-paper);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.sample:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+.sample__thumb { position: relative; display: block; padding: 5px; background: #fff; box-shadow: 0 8px 18px -8px rgba(0,0,0,.35); rotate: -4deg; transition: rotate 0.4s var(--ease); }
+.sample:nth-child(even) .sample__thumb { rotate: 3deg; }
+.sample__thumb:hover { rotate: 0deg; }
+.sample__thumb img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; }
+.sample__clip { top: -22px; left: 18px; rotate: -6deg; }
+.sample__clip--r { left: auto; right: 16px; rotate: 8deg; }
+.sample__type { font-size: 0.6rem; color: var(--ink-3); }
+.sample__title { font-family: var(--serif-cn); font-weight: 900; font-size: 1.05rem; line-height: 1.35; margin: 6px 0 4px; }
+.sample__role { font-size: 0.8rem; color: var(--ink-2); margin-bottom: 14px; }
+.sample__btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.sample__btns .dbtn { padding: 8px 14px; font-size: 0.78rem; }
+.sample .dbtn { background: var(--ink); color: #fff; box-shadow: none; }
+.sample .dbtn--ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px currentColor; }
+
 
 .lightbox { position: fixed; inset: 0; z-index: 300; display: grid; place-items: center; padding: 40px 20px; background: rgba(10, 10, 12, 0.86); backdrop-filter: blur(6px); }
 .lightbox[hidden] { display: none; }
@@ -1122,6 +1149,28 @@ button.hobby__img { display: block; width: 100%; padding: 0; border: 0; cursor: 
 .hobby__name { font-family: var(--serif-cn); font-size: 1.08rem; font-weight: 900; }
 .hobby__line { font-size: 0.76rem; color: var(--ink-2); }
 .hobbies__hand { margin-top: 44px; text-align: right; font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--ink-2); rotate: -4deg; }
+
+.snaps { margin-top: clamp(70px, 9vw, 110px); }
+.snaps__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; margin-bottom: 34px; }
+.snaps__head .hobbies__label { margin: 0; }
+.snaps__desc { color: var(--ink-2); font-size: 0.92rem; }
+.snaps__wall { columns: 3; column-gap: 30px; }
+.snap {
+  position: relative;
+  break-inside: avoid;
+  margin: 14px 0 34px;
+  padding: 9px 9px 0;
+  background: #fff;
+  box-shadow: var(--shadow-paper);
+  rotate: -1.6deg;
+  transition: rotate 0.5s var(--ease), transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+.snap:nth-child(3n+2) { rotate: 1.8deg; }
+.snap:nth-child(3n) { rotate: -0.6deg; }
+.snap:hover { rotate: 0deg; transform: translateY(-5px); box-shadow: var(--shadow-lift); z-index: 2; }
+.snap__img { display: block; width: 100%; padding: 0; border: 0; background: #eee; cursor: zoom-in; }
+.snap__img img { display: block; width: 100%; height: auto; }
+.snap figcaption { font-family: var(--script); font-size: 1.25rem; line-height: 1; text-align: center; padding: 10px 0 12px; color: var(--ink-2); }
 
 /* ============ AI — drawer ============ */
 .ai::before {
@@ -1385,6 +1434,7 @@ button.hobby__img { display: block; width: 100%; padding: 0; border: 0; cursor: 
   .case__toggle { grid-column: 3; grid-row: 1 / span 2; }
   .case__tab { left: min(var(--tab), calc(100% - 210px)); font-size: 0.6rem; padding: 0 16px; }
   .case__inner { grid-template-columns: 1fr; }
+  .samples__list { grid-template-columns: 1fr; }
   .case__info { rotate: 0deg; margin-bottom: 30px; }
   .postit { margin-right: -10px; }
 
@@ -1414,6 +1464,11 @@ button.hobby__img { display: block; width: 100%; padding: 0; border: 0; cursor: 
 }
 
 @media (max-width: 600px) {
+  .snaps__wall { columns: 2; column-gap: 14px; }
+  .snap { padding: 6px 6px 0; margin-bottom: 20px; }
+  .snap figcaption { font-size: 1rem; padding: 7px 0 9px; }
+  .sample { grid-template-columns: 92px 1fr; gap: 16px; padding: 16px; }
+  .samples { margin-top: 56px; }
   .hobbies__board { gap: 34px 18px; }
   .hobby { width: calc((100% - 18px) / 2); padding: 8px 8px 0; }
   .hobby:nth-child(2), .hobby:nth-child(5) { translate: 0 10px; }
