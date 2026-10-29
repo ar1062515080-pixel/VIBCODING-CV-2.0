@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Pinyon+Script&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=11" />
+  <link rel="stylesheet" href="css/style.css?v=12" />
 </head>
 <body>
 
@@ -846,9 +846,7 @@
           <div class="hobbies__board">
             <figure class="hobby" style="--c:#ffd1dc" data-hobby="fit">
               <span class="tape tape--top"></span>
-              <div class="hobby__img">
-                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></svg><span>照片待添加</span></span>
-              </div>
+              <button class="hobby__img" type="button" data-lightbox="assets/about/fitness.jpg"><img src="assets/about/fitness.jpg" alt="健身房" loading="lazy" /></button>
               <figcaption>
                 <span class="hobby__script">stay strong</span>
                 <b class="hobby__name">健身</b>
@@ -857,20 +855,16 @@
             </figure>
             <figure class="hobby" style="--c:#dff0c8" data-hobby="hike">
               <span class="tape tape--tl"></span>
-              <div class="hobby__img">
-                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M3 20l6-10 4 6 3-4 5 8z"/><path d="M15 4v5M15 4l4 1.5L15 7"/></svg><span>照片待添加</span></span>
-              </div>
+              <button class="hobby__img" type="button" data-lightbox="assets/about/hiking.jpg"><img src="assets/about/hiking.jpg" alt="山间徒步" loading="lazy" /></button>
               <figcaption>
                 <span class="hobby__script">on the trail</span>
                 <b class="hobby__name">徒步</b>
-                <span class="hobby__line">用脚步认识一座城市</span>
+                <span class="hobby__line">走进山野，给自己充电</span>
               </figcaption>
             </figure>
             <figure class="hobby" style="--c:#cfe3ff" data-hobby="paint">
               <span class="tape tape--top"></span>
-              <div class="hobby__img">
-                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.7 0-1.3-1.2-1.6-1.2-2.8 0-1 .8-1.6 1.8-1.6H17a4 4 0 0 0 4-4C21 6.4 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/></svg><span>照片待添加</span></span>
-              </div>
+              <button class="hobby__img" type="button" data-lightbox="assets/about/drawing.jpg"><img src="assets/about/drawing.jpg" alt="我的素描静物" loading="lazy" /></button>
               <figcaption>
                 <span class="hobby__script">sketchbook</span>
                 <b class="hobby__name">画画</b>
@@ -879,9 +873,7 @@
             </figure>
             <figure class="hobby" style="--c:#ffe680" data-hobby="read">
               <span class="tape tape--tl"></span>
-              <div class="hobby__img">
-                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M3 5.5c3-1.3 6-1.3 9 .5v13c-3-1.8-6-1.8-9-.5zM21 5.5c-3-1.3-6-1.3-9 .5v13c3-1.8 6-1.8 9-.5z"/></svg><span>照片待添加</span></span>
-              </div>
+              <button class="hobby__img" type="button" data-lightbox="assets/about/reading.jpg"><img src="assets/about/reading.jpg" alt="在看的书" loading="lazy" /></button>
               <figcaption>
                 <span class="hobby__script">page by page</span>
                 <b class="hobby__name">阅读</b>
@@ -890,9 +882,7 @@
             </figure>
             <figure class="hobby" style="--c:#f1dcae" data-hobby="ai">
               <span class="tape tape--top"></span>
-              <div class="hobby__img">
-                <span class="hobby__ph"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span>照片待添加</span></span>
-              </div>
+              <button class="hobby__img" type="button" data-lightbox="assets/about/ai.jpg"><img src="assets/about/ai.jpg" alt="追 AI 趋势" loading="lazy" /></button>
               <figcaption>
                 <span class="hobby__script">what's next</span>
                 <b class="hobby__name">追 AI 趋势</b>
@@ -969,8 +959,8 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/i18n-en.js?v=11"></script>
-  <script src="js/i18n.js?v=11"></script>
-  <script src="js/main.js?v=11"></script>
+  <script src="js/i18n-en.js?v=12"></script>
+  <script src="js/i18n.js?v=12"></script>
+  <script src="js/main.js?v=12"></script>
 </body>
 </html>
