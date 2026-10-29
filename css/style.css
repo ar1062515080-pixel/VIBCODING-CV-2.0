@@ -321,13 +321,13 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 .hphone__notch { position: absolute; top: 6px; left: 50%; translate: -50% 0; width: 44px; height: 12px; border-radius: 8px; background: #1a1a1c; }
 .hphone__name { font-size: 0.56rem; font-weight: 700; margin-bottom: 6px; }
 .hphone__row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
-.hphone__avatar { width: 30px; height: 30px; border-radius: 50%; flex: none; background: linear-gradient(140deg, #f6c9d4, #cfe0f5); }
+.hphone__avatar { width: 30px; height: 30px; border-radius: 50%; flex: none; background: #f6c9d4 center / cover; }
 .hphone__stats { display: flex; gap: 6px; font-size: 0.42rem; line-height: 1.2; text-align: center; color: var(--ink-3); }
 .hphone__stats b { display: block; font-size: 0.56rem; color: var(--ink); }
 .hphone__bio { height: 4px; border-radius: 2px; background: #eceae6; margin-bottom: 3px; }
 .hphone__bio.short { width: 60%; margin-bottom: 7px; }
 .hphone__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
-.hphone__grid i { aspect-ratio: 1; background: var(--g); }
+.hphone__grid i { aspect-ratio: 1; background: #eee center / cover; }
 
 .hgrid {
   position: absolute;
@@ -344,7 +344,8 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
   z-index: 2;
   animation: rise 1s var(--ease) 0.5s both;
 }
-.hgrid i { aspect-ratio: 0.8; display: grid; place-items: end start; padding: 4px; background: var(--g); font-style: normal; font-family: var(--mono); font-size: 0.48rem; color: rgba(17,17,19,.7); }
+.hgrid i { aspect-ratio: 0.8; display: grid; place-items: end start; padding: 4px; background: #eee center / cover; font-style: normal; }
+.hgrid b { padding: 1px 4px; border-radius: 3px; background: rgba(255,255,255,.88); font-family: var(--mono); font-size: 0.46rem; font-weight: 500; color: var(--ink); }
 .hgrid .tape { width: 70px; height: 22px; left: auto; right: -14px; top: auto; bottom: -8px; rotate: -24deg; }
 
 .cherries { position: absolute; left: calc(50% + 300px); top: calc(50% - 110px); width: 92px; height: 112px; z-index: 3; filter: drop-shadow(0 6px 6px rgba(0,0,0,.18)); animation: rise 1s var(--ease) 0.6s both; }
@@ -1150,27 +1151,6 @@ button.hobby__img { display: block; width: 100%; padding: 0; border: 0; cursor: 
 .hobby__line { font-size: 0.76rem; color: var(--ink-2); }
 .hobbies__hand { margin-top: 44px; text-align: right; font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--ink-2); rotate: -4deg; }
 
-.snaps { margin-top: clamp(70px, 9vw, 110px); }
-.snaps__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; margin-bottom: 34px; }
-.snaps__head .hobbies__label { margin: 0; }
-.snaps__desc { color: var(--ink-2); font-size: 0.92rem; }
-.snaps__wall { columns: 3; column-gap: 30px; }
-.snap {
-  position: relative;
-  break-inside: avoid;
-  margin: 14px 0 34px;
-  padding: 9px 9px 0;
-  background: #fff;
-  box-shadow: var(--shadow-paper);
-  rotate: -1.6deg;
-  transition: rotate 0.5s var(--ease), transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
-}
-.snap:nth-child(3n+2) { rotate: 1.8deg; }
-.snap:nth-child(3n) { rotate: -0.6deg; }
-.snap:hover { rotate: 0deg; transform: translateY(-5px); box-shadow: var(--shadow-lift); z-index: 2; }
-.snap__img { display: block; width: 100%; padding: 0; border: 0; background: #eee; cursor: zoom-in; }
-.snap__img img { display: block; width: 100%; height: auto; }
-.snap figcaption { font-family: var(--script); font-size: 1.25rem; line-height: 1; text-align: center; padding: 10px 0 12px; color: var(--ink-2); }
 
 /* ============ AI — drawer ============ */
 .ai::before {
@@ -1464,9 +1444,6 @@ button.hobby__img { display: block; width: 100%; padding: 0; border: 0; cursor: 
 }
 
 @media (max-width: 600px) {
-  .snaps__wall { columns: 2; column-gap: 14px; }
-  .snap { padding: 6px 6px 0; margin-bottom: 20px; }
-  .snap figcaption { font-size: 1rem; padding: 7px 0 9px; }
   .sample { grid-template-columns: 92px 1fr; gap: 16px; padding: 16px; }
   .samples { margin-top: 56px; }
   .hobbies__board { gap: 34px 18px; }
