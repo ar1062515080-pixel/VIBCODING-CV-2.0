@@ -1193,6 +1193,7 @@ html[data-lang="en"] .nav__lang [data-l="en"] { background: var(--ink); color: #
 .spread__script { font-family: var(--script); font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1; color: #ffd1dc; rotate: -5deg; margin-bottom: 4px; }
 .spread__page--l h3 { font-family: var(--serif-cn); font-weight: 900; font-size: clamp(2.2rem, 4.6vw, 3.6rem); line-height: 1.1; }
 .spread__text { margin: 18px 0 28px; max-width: 440px; color: rgba(255,255,255,.88); }
+.spread__text .hl { color: #fff; background: linear-gradient(transparent 55%, rgba(255, 207, 64, 0.6) 55%); }
 
 .ticket { width: min(100%, 360px); background: #fff7cc; color: var(--ink); box-shadow: var(--shadow-paper); rotate: -3deg; }
 .ticket__top { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #c8102e; color: #fff; }

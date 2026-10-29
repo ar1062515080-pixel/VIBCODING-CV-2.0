@@ -299,7 +299,7 @@ window.I18N_EN = {
 "需求梳理": "Requirements",
 "可用性测试": "Usability testing",
 "联系方式<span class=\"script\">say hello</span>": "Contact<span class=\"script\">say hello</span>",
-"PR / 营销 / 内容": "PR / Marketing / Content",
+"品牌 / 公关 / 营销": "Brand / PR / Marketing",
 "不限": "Open",
 "复制": "Copy",
 "微信同手机号": "Same as CN mobile",
@@ -330,6 +330,6 @@ window.I18N_EN = {
 "重新开始 ↺": "Start over ↺",
 "已复制：": "Copied: "
 ,"下载简历": "Résumé","正在寻找全职机会": "Looking for a full-time role"
-,"我目前在阿德莱德大学攻读传播学硕士，预计 2027 年 3 月毕业；曾在公关代理、品牌营销和教育行业做过传播与内容工作，能从策略一路落地到执行，也习惯用 AI 提升内容和项目效率。现正寻找品牌传播、公关、市场营销或内容策划方向的全职岗位，期待你的联系。": "I'm completing a Master of Communication at Adelaide University (graduating March 2027) and have worked on communication and content across a PR agency, brand marketing and the education sector. I take ideas from strategy through to execution, and I use AI to make content and project work more efficient. I'm now looking for a full-time role in brand communication, PR, marketing or content planning. I'd love to hear from you."
+,"我目前在阿德莱德大学攻读传播学硕士，预计 2027 年 3 月毕业；曾在公关代理、品牌营销和教育行业做过传播与内容工作，能从策略一路落地到执行，也习惯用 AI 提升内容和项目效率。现正寻找<mark class=\"hl\">品牌传播、公关、市场营销或内容策划方向的全职岗位</mark>，期待你的联系。": "I'm completing a Master of Communication at Adelaide University (graduating March 2027) and have worked on communication and content across a PR agency, brand marketing and the education sector. I take ideas from strategy through to execution, and I use AI to make content and project work more efficient. I'm now looking for <mark class=\"hl\">a full-time role in brand communication, PR, marketing or content planning</mark>. I'd love to hear from you."
 ,"全职": "Full-time"
 };
