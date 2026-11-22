@@ -26,7 +26,7 @@ python3 -m http.server 8080
 1. **封面 Hero** — folder collage with topic photo tiles (PR, IMC, KOL, SEO, 小红书, AI) and a phone-grid of life photos
 2. **教育背景 Education** — profile ID folder (contact, languages, PDF résumé download) and two lined-paper cards with GPA post-it and course stickers
 3. **工作经历 Work** — L'Oréal · Armani Beauty, Kingway, FleishmanHillard (with two Guerlain writing samples), Kada as click-to-open folders; bullets follow the résumé
-4. **代表项目 Projects** — Armani Dolci launch (with selected data pages from the 7 POINTS analysis), Chi Bodycare, Adelaide Park Lands, Guerlain Winners Party, each with a tabbed project book
+4. **代表项目 Projects** — Armani Dolci launch (with selected pages from the 7 POINTS analysis and the Douyin livestream analysis), Chi Bodycare, Adelaide Park Lands, Guerlain Winners Party, each with a tabbed project book
 5. **传播能力与工具 Skills** — divider drawer: content, collaboration, tools & language, AI workflow
 6. **关于我 About** — ENTJ personality card, trait post-its and five hobby photo frames
 7. **联系方式 Contact** — open-to-work spread with one-click copy for phone, email and WeChat
